@@ -44,6 +44,8 @@ export default function Page() {
               </pre>
               <div className="mt-6">
                 <p>userId, displayName, statusMessage のQRコード</p>
+                <p>文字列のQRコード生成が可能</p>
+
                 <div className="mt-6 p-4 bg-white flex justify-center">
                   <QRCode
                     url={JSON.stringify({
@@ -56,6 +58,7 @@ export default function Page() {
               </div>
               <div className="mt-6">
                 <p>pictureUrl のQRコード</p>
+                <p>URLのQRコード生成が可能</p>
                 <div className="mt-6 p-4 bg-white flex justify-center">
                   <QRCode url={profile.pictureUrl || ""} />
                 </div>
